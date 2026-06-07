@@ -1,0 +1,45 @@
+{
+    "version": "2.0",
+    "resources": [
+        {
+            "resource": "asset",
+            "key": "TAVILY_API_KEY",
+            "value": {
+                "name": { "defaultValue": "TAVILY_API_KEY", "isExpression": false, "displayName": "Name" },
+                "folderPath": { "defaultValue": "", "isExpression": false, "displayName": "Folder Path" },
+                "EntryPointUniqueId": { "defaultValue": "cc306a23-0ba7-4344-85ec-50670c68eaa5", "isExpression": false, "displayName": "graph" }
+            },
+            "metadata": { "ActivityName": "retrieve_async", "BindingsVersion": "2.2", "DisplayLabel": "FullName" }
+        },
+        {
+            "resource": "asset",
+            "key": "GROQ_API_KEY",
+            "value": {
+                "name": { "defaultValue": "GROQ_API_KEY", "isExpression": false, "displayName": "Name" },
+                "folderPath": { "defaultValue": "", "isExpression": false, "displayName": "Folder Path" },
+                "EntryPointUniqueId": { "defaultValue": "cc306a23-0ba7-4344-85ec-50670c68eaa5", "isExpression": false, "displayName": "graph" }
+            },
+            "metadata": { "ActivityName": "retrieve_async", "BindingsVersion": "2.2", "DisplayLabel": "FullName" }
+        },
+        {
+            "resource": "asset",
+            "key": "TELEGRAM_BOT_TOKEN",
+            "value": {
+                "name": { "defaultValue": "TELEGRAM_BOT_TOKEN", "isExpression": false, "displayName": "Name" },
+                "folderPath": { "defaultValue": "", "isExpression": false, "displayName": "Folder Path" },
+                "EntryPointUniqueId": { "defaultValue": "cc306a23-0ba7-4344-85ec-50670c68eaa5", "isExpression": false, "displayName": "graph" }
+            },
+            "metadata": { "ActivityName": "retrieve_async", "BindingsVersion": "2.2", "DisplayLabel": "FullName" }
+        },
+        {
+            "resource": "asset",
+            "key": "TELEGRAM_CHAT_ID",
+            "value": {
+                "name": { "defaultValue": "TELEGRAM_CHAT_ID", "isExpression": false, "displayName": "Name" },
+                "folderPath": { "defaultValue": "", "isExpression": false, "displayName": "Folder Path" },
+                "EntryPointUniqueId": { "defaultValue": "cc306a23-0ba7-4344-85ec-50670c68eaa5", "isExpression": false, "displayName": "graph" }
+            },
+            "metadata": { "ActivityName": "retrieve_async", "BindingsVersion": "2.2", "DisplayLabel": "FullName" }
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+    "$id": "entry-points.json",
+    "entryPoints": [
+        {
+            "filePath": "graph",
+            "uniqueId": "cc306a23-0ba7-4344-85ec-50670c68eaa5",
+            "type": "agent",
+            "input": {
+                "type": "object",
+                "properties": {
+                    "trigger": {
+                        "default": "daily",
+                        "description": "Trigger for the agent",
+                        "title": "Trigger",
+                        "type": "string"
+                    }
+                },
+                "required": []
+            },
+            "output": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "description": "Execution status",
+                        "title": "Status",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "status"
+                ]
+            },
+            "graph": {
+                "nodes": [
+                    {
+                        "id": "__start__",
+                        "name": "__start__",
+                        "type": "__start__",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "fetch_news",
+                        "name": "fetch_news",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "summarize",
+                        "name": "summarize",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "format",
+                        "name": "format",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "send_telegram",
+                        "name": "send_telegram",
+                        "type": "node",
+                        "subgraph": null,
+                        "metadata": {}
+                    },
+                    {
+                        "id": "__end__",
+                        "name": "__end__",
+                        "type": "__end__",
+                        "subgraph": null,
+                        "metadata": {}
+                    }
+                ],
+                "edges": [
+                    {
+                        "source": "__start__",
+                        "target": "fetch_news",
+                        "label": null
+                    },
+                    {
+                        "source": "fetch_news",
+                        "target": "summarize",
+                        "label": null
+                    },
+                    {
+                        "source": "format",
+                        "target": "send_telegram",
+                        "label": null
+                    },
+                    {
+                        "source": "summarize",
+                        "target": "format",
+                        "label": null
+                    },
+                    {
+                        "source": "send_telegram",
+                        "target": "__end__",
+                        "label": null
+                    }
+                ]
+            }
+        }
+    ]
+}

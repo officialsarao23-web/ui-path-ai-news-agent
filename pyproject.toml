@@ -1,0 +1,13 @@
+[project]
+name = "my-uipath-agent"
+version = "0.1.0"
+description = "UiPath developer agent"
+authors = [{ name = "Gurjot Singh" }]
+requires-python = ">=3.11"
+dependencies = [
+    "uipath>=2.10.78",
+    "uipath-langchain",
+    "langchain-groq",
+    "tavily-python",
+    "requests",
+]

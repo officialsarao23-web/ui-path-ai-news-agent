@@ -1,0 +1,6 @@
+{
+  "ProjectType": "Agent",
+  "Name": "my-uipath-agent",
+  "Description": "UiPath developer agent",
+  "MainFile": null
+}
